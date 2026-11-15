@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Plan and save your university coursework and study tasks.">
+    <title>Fatima's Academic Portfolio | Academic Planner</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/planner.js" defer></script>
+</head>
+<body>
+    <header><div class="nav-container">
+        <a class="logo" href="index.html">Fatima's Portfolio</a>
+        <nav aria-label="Main navigation"><ul>
+            <li><a href="index.html">Home</a></li><li><a href="about.html">About Me</a></li>
+            <li><a href="projects.html">Projects</a></li><li><a href="planner.html" class="active" aria-current="page">Academic Planner</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul></nav>
+    </div></header>
+    <main>
+        <h1 class="page-title">Interactive Academic Planner</h1>
+        <p class="page-intro">Manage your daily university coursework, assignments, and study tasks. Tasks are saved in this browser on this device.</p>
+        <section class="card planner-card" aria-label="Academic task planner">
+            <form id="taskForm" class="planner-input-container">
+                <label class="visually-hidden" for="taskInput">New academic task</label>
+                <input type="text" id="taskInput" maxlength="200" placeholder="Enter a new academic task (e.g., COS 106 Lab Assignment)..." required>
+                <button type="submit" class="btn">Add Task</button>
+            </form>
+            <p id="plannerMessage" class="form-message" aria-live="polite"></p>
+            <ul id="taskList" class="task-list" aria-label="Your tasks"></ul>
+        </section>
+    </main>
+    <footer><p>&copy; 2025 Fatima MIVA Open University. All Rights Reserved.</p></footer>
+</body>
+</html>
